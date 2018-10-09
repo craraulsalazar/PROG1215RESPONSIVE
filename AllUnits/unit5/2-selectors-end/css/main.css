@@ -1,0 +1,24 @@
+input[type="text"] {
+	border-color: blue;
+}
+
+input[checked] {
+	diplay: none;
+}
+
+img[alt*="animal"] {
+	border: 5px solid orange;
+}
+
+.main p:first-child {
+	color: red;
+}
+
+.main p:last-child {
+	color: blue;
+}
+
+.main p:nth-child(odd) {
+	font-style: italics;
+	font-size: 1.5em;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Response WebDesign</title>
+
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div class="page-wrap clear">
+		<header role="banner">
+			<h1 class="wordmark">
+				Responsive WebDesign
+			</h1>
+			</a>
+			<nav role="navigation">
+				<ul class="clear">
+					<li>
+						<a href="/portfolio">portfolio</a>
+					</li>
+					<li>
+						<a href="/about">about</a>
+					</li>
+					<li>
+						<a href="/services">services</a>
+					</li>
+					<li>
+						<a href="contact.html">contact</a>
+					</li>
+					<li>
+						<a href="/blog">blog</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<form class="contact">
+			<fieldset>
+				<legend>Contact Us Today</legend>
+				<div class="form-element">
+					<label for="name">Name:</label>
+					<input
+						id="name"
+						name="name"
+						type="text"
+						placeholder="What should we call you?"
+						required="required"
+						aria-required="true"
+						title="Help us out we need to call you something"
+					/>
+				</div>
+				<div class="form-element">
+					<label for="email">Email:</label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="Please share your best email"
+						required="required"
+						aria-required="true" />
+				</div>
+				<div class="form-element">
+					<label for="message">Message:</label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="What can we do for you?"
+						required="required"
+						aria-required="true" ></textarea>
+				</div>
+				<div class="form-button">
+					<input id="submit" type="submit" />
+				</div>
+			</fieldset>
+		</form>
+
+		<footer class="clear" role="contentinfo">
+			<ul class="social-links">
+				<li>
+					<a href="#">
+						<span class="fa fa-twitter social"></span>
+						<span class="offscreen">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-linkedin social"></span>
+						<span class="offscreen">LinkedIn</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-tumblr social"></span>
+						<span class="offscreen">Tumblr</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<span class="fa fa-facebook social"></span>
+						<span class="offscreen">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-instagram social"></span>
+						<span class="offscreen">Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:email@email.com">
+						<span class="fa fa-envelope social"></span>
+						<span class="offscreen">Email</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="js/polyfiller.js"></script>
+	<script>
+		$.webshims.polyfill();
+	</script>
+</body>
+</html>

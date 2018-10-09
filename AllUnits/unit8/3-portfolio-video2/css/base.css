@@ -1,0 +1,82 @@
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Reset >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, ol, ul, li,
+fieldset, form, label, legend, article, aside, canvas, details, embed, footer,
+header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%; /* == 16px == 1em */
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input, textarea {
+	font-size: 100%;
+	font: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1.25;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Base Styles >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+.clear:before, .clear:after {
+	content:"";
+	display:table;
+}
+
+.clear:after {
+	clear:both;
+}
+
+.offscreen {
+	display: block;
+	width: 1px;
+	height: 1px;
+	text-indent: -9999px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.gone {
+	display: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+.link-plain:hover, .link-plain:focus {
+	text-decoration: none;
+}
+
+.link-color:hover, .link-color:focus {
+	color: #002596;
+	text-decoration: none;
+}

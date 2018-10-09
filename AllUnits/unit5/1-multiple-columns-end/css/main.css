@@ -1,0 +1,13 @@
+.main {
+
+  width: 50%;
+
+  -webkit-column-width: 10em;
+  -moz-column-width: 10em;
+  column-width: 10em;
+
+  -webkit-column-rule: 1px solid #000;;
+  -moz-column-rule: 1px solid #000;;
+  column-rule: 1px solid #000;
+}
+

@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'QuickSandBook';
+	src: url('../fonts/quicksand/quicksand_book-webfont.woff2') format('woff2'),
+		 url('../fonts/quicksand/quicksand_book-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SinaNova';
+	src: url('../fonts/sinanova/sinanovareg-webfont.woff2') format('woff2'),
+		 url('../fonts/sinanova/sinanovareg-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: rgba(242, 242, 242, 0.9);
+	background-image:
+		radial-gradient(circle at 100% 150%, rgba(242, 242, 242, 0.9) 24%, white 25%, white 28%, rgba(242, 242, 242, 0.9) 29%, rgba(242, 242, 242, 0.9) 36%, white 36%, white 40%, transparent 40%, transparent),
+		radial-gradient(circle at 0    150%, rgba(242, 242, 242, 0.9) 24%, white 25%, white 28%, rgba(242, 242, 242, 0.9) 29%, rgba(242, 242, 242, 0.9) 36%, white 36%, white 40%, transparent 40%, transparent),
+		radial-gradient(circle at 50%  100%, white 10%, rgba(242, 242, 242, 0.9) 11%, rgba(242, 242, 242, 0.9) 23%, white 24%, white 30%, rgba(242, 242, 242, 0.9) 31%, rgba(242, 242, 242, 0.9) 43%, white 44%, white 50%, rgba(242, 242, 242, 0.9) 51%, rgba(242, 242, 242, 0.9) 63%, white 64%, white 71%, transparent 71%, transparent),
+		radial-gradient(circle at 100% 50%, white 5%, rgba(242, 242, 242, 0.9) 6%, rgba(242, 242, 242, 0.9) 15%, white 16%, white 20%, rgba(242, 242, 242, 0.9) 21%, rgba(242, 242, 242, 0.9) 30%, white 31%, white 35%, rgba(242, 242, 242, 0.9) 36%, rgba(242, 242, 242, 0.9) 45%, white 46%, white 49%, transparent 50%, transparent),
+		radial-gradient(circle at 0    50%, white 5%, rgba(242, 242, 242, 0.9) 6%, rgba(242, 242, 242, 0.9) 15%, white 16%, white 20%, rgba(242, 242, 242, 0.9) 21%, rgba(242, 242, 242, 0.9) 30%, white 31%, white 35%, rgba(242, 242, 242, 0.9) 36%, rgba(242, 242, 242, 0.9) 45%, white 46%, white 49%, transparent 50%, transparent);
+	background-size:100px 50px;
+}
+
+.page-wrap {
+	max-width: 900px;
+	margin: 50px auto 0;
+	font-family: SinaNova, Gill Sans, Gill Sans MT, Calibri, sans-serif;;
+	color: #000;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+header {
+	padding: 1% 0 10%;
+	text-align: center;
+}
+
+@keyframes wordmark {
+
+	0% {
+		text-shadow: 0 2px 0 #FFF, 4px 4px 1px #CCC;
+	}
+
+	50% {
+		text-shadow: 0 0 20px #000;
+		transform: scale(1.1);
+	}
+
+	100% {
+		text-shadow: 0 2px 0 #FFF, 4px 4px 1px #CCC;
+	}
+}
+
+.wordmark {
+	padding-bottom: 4%;
+	font-family: QuickSandBook, Gill Sans, Gill Sans MT, Calibri, sans-serif;;
+	font-weight: 700;
+	font-size: 3em;
+
+	text-shadow: 0 2px 0 #FFF, 4px 4px 1px #CCC;
+
+	animation: wordmark 1.5s ease-in 2;
+}
+
+header nav {
+	border-top: 1px solid #333;
+}
+
+header ul {
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 3%;
+}
+
+header ul > li {
+	display: inline-block;
+	padding-left: 90px;
+	font-size: 1.2em;
+}
+
+header ul > li:first-child {
+	padding-left: 0;
+}
+
+header ul li a {
+	border-bottom: 3px solid transparent;
+	transition: all .5s ease-out;
+}
+
+header ul li a:hover, header ul li a:focus {
+	border-bottom: 3px solid #333;
+	text-decoration: none;
+	transition: all 1s ease-in;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< WORK >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+.work {
+	padding-bottom: 4%;
+}
+
+.work .piece {
+	float: left;
+	margin: 6px 2px;
+	padding: 8px 22px;
+	border: 1px solid #999;
+	background-color: #FFF;
+	text-align: center;
+	cursor: pointer;
+	opacity: .7;
+	box-shadow: 0 1px 3px #333;
+
+	transition:
+		opacity 0.5s ease-in,
+		transform 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	z-index: 1;
+}
+
+.work .piece:hover, .work .piece:focus {
+	opacity: 1;
+	transform: scale(1.05);
+	z-index: 2;
+}
+
+.work .piece .piece-label {
+	padding-top: 2%;
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+}
+
+.work .piece a:hover, .work .piece a:focus {
+	text-decoration: none;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+footer .social-links {
+	overflow: hidden;
+	padding: 2% 0 4%;
+	float: right;
+}
+
+footer .social-links li {
+	float: left;
+}
+
+footer .social-links li + li {
+	margin-left: 1em;
+}
+
+footer .social {
+	color: #AAA;
+	font-size: 1.5em;
+}
+
+footer .social:hover, footer .social:focus {
+	color: #000;
+}
+
+footer .social-links a:hover, footer .social a:focus {
+	text-decoration: none;
+}
