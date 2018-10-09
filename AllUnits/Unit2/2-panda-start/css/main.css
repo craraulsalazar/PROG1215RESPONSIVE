@@ -1,0 +1,80 @@
+.page-wrap {
+	width: 1080px;
+	margin: 20px auto 0;
+	color: #000;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.page-header {
+	width: 100%;
+	padding: 10px 0 40px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+	font-family: cursive;
+	font-size: 48px;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Navigation >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+nav {
+	float: left;
+	width: 200px;
+}
+
+nav > ul {
+	padding-top: 30px;
+}
+
+nav > ul > .nav-item {
+	padding-bottom: 10px;
+}
+
+nav > ul > .nav-item > a:hover, .nav > .nav-item > a:focus {
+	color: #002596;
+	text-decoration: none;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.post {
+	float: left;
+	width: 840px;
+	padding: 20px 10px;
+}
+
+.post .post-header {
+	padding-bottom: 25px;
+	font-family: cursive;
+}
+
+.post .post-header .post-title {
+	padding-top: 10px;
+	font-size: 24px;
+}
+
+.post .post-body p {
+	padding-bottom: 20px;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.post .post-image {
+	width: 840px;
+	padding-bottom: 20px;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.post-footer .post-author {
+	font-family: cursive;
+}
