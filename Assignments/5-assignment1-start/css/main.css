@@ -1,0 +1,160 @@
+.page-wrap {
+
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+header {
+	width: 90%; /* width: 1080px*/
+	margin: 1% auto;  /* 20px / 1080px = 1% */
+	font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #20B9EB;
+}
+
+header h1 {
+	width:100%;
+	font-size: 3em;  /* 48px / 16px = 3em */
+}
+
+header h2 {
+	width:100%;
+	font-size: 2em; /* 32px/16px = 2em */
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< nav  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+nav {
+	width: 100%;
+	background-color: #34332E;
+	text-align: center;
+}
+
+nav > ul {
+	margin: 0 auto;
+	padding: 1% 0; /* 10px / 1080px = <1% */
+	/*width: 30%;  489.45 / 1080px = 33%*/
+	width: 490px;
+	
+	display: inline-block;
+
+}
+
+nav > ul > li {
+	float: left;
+	padding-left: 5%; /* 30px / 1080px = 2% */
+}
+
+nav > ul > li:first-child {
+	padding-left: 0;
+}
+
+nav > ul > li > a {
+	color: #DDDDDF;
+	font-size: 1.1em; /* 18px / 16px = 1.1em*/
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:focus {
+	color: #20B9EB;
+	text-decoration: none;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.main {
+	width: 100%;  /* width: 1080px*/
+	margin: 1% auto; /* 20px / 1080px = 1% */
+	text-align: center;
+}
+
+.image-slider > img {
+	width:100%;
+}
+
+.image-slider .image-dots {
+	display: inline-block;
+	margin: 1% auto; /* 20px / 1080px =  <1%*/
+}
+
+.image-slider .image-dot {
+	float: left;
+	height: 30px;  /* 30px / 1080px =  2%*/
+	width: 30px;  /* 30px / 1080px =  2%*/
+	margin: 0 30px;  /* 30px / 1080px =  2%*/
+	border-radius: 30px;
+	background-color: #DDDDDF;
+}
+
+.image-slider .image-dot.image-current {
+	background-color: #20B9EB;
+}
+
+.main .sub-images {
+	margin: 1% 0;  /* 20px /1080px */
+}
+
+.main .sub-image {
+	float: left;
+	width: 49%;  /*  530px / 1080px  = 50%*/
+	margin: 0  0.1% 1%; /*  5px 20px / 1080px =  1%*/
+	background-color: #20B9EB;
+	padding: 1%; /* 20px / 1080px =  1%*/
+}
+
+.main .sub-image > img {
+	width: 94%;  /* 500px / 530px*/
+}
+
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+footer {
+	width: 100%; /* 1080px */
+	margin: 0 auto 20px;
+}
+
+footer .social-icon {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/social-gray.png) no-repeat;
+	color: #AAA;
+	font-size: .9em;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.social-icon.twitter {
+	background-position: -38px 0;
+}
+
+.social-icon.facebook {
+	background-position: 0 0;
+}
+
+.social-icon.instagram {
+	background-position: -114px 0;
+}
+
+.social-icon.pintrest {
+	background-position: -38px -42px;
+}
+
+.social-icon.vine {
+	background-position: -152px -42px;
+}
+
+footer .legal {
+	text-align: right;
+}
