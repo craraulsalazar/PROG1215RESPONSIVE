@@ -193,6 +193,10 @@ footer .legal {
 
 @media screen and (max-width:500px) {
 
+	header {
+		width: 75%;
+	}
+
 	nav > ul {
 		margin: 0 auto;
 		padding: 1% 0; 
@@ -214,7 +218,10 @@ footer .legal {
 
 @media screen and (max-width:425px) {
 
-	
+	header {
+		width: 99%;
+	}
+
 	header h1 {
 		font-size: 2em;  
 	}
@@ -231,18 +238,18 @@ footer .legal {
 	nav > ul {
 		margin: 0 auto;
 		padding: 1% 0; 
-		width: 50%;
+		width: 60%;
 		display: inline-block;
 	}
 
 
 	nav > ul > li {
 		float: none;
-		padding: 2% 2% 2% 29%; 
+		padding: 2% 2% 2% 26%; 
 	}
 	
 	nav > ul > li:first-child {
-		padding-left: 29%;
+		padding-left: 26%;
 	}
 	nav > ul > li > a {
 		font-size: 1.7em; 
