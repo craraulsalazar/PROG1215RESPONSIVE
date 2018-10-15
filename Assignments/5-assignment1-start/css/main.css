@@ -7,7 +7,7 @@
 /******************************************************************************/
 
 header {
-	width: 90%; /* width: 1080px*/
+	width: 71%; /* width: 1080px*/
 	margin: 1% auto;  /* 20px / 1080px = 1% */
 	font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
 	text-transform: uppercase;
@@ -39,7 +39,7 @@ nav > ul {
 	margin: 0 auto;
 	padding: 1% 0; /* 10px / 1080px = <1% */
 	/*width: 30%;  489.45 / 1080px = 33%*/
-	width: 490px;
+	width: 489.45px;
 	
 	display: inline-block;
 
@@ -69,7 +69,7 @@ nav > ul > li > a:hover, nav > ul > li > a:focus {
 /******************************************************************************/
 
 .main {
-	width: 100%;  /* width: 1080px*/
+	width: 71%;  /* width: 1080px*/
 	margin: 1% auto; /* 20px / 1080px = 1% */
 	text-align: center;
 }
@@ -81,13 +81,14 @@ nav > ul > li > a:hover, nav > ul > li > a:focus {
 .image-slider .image-dots {
 	display: inline-block;
 	margin: 1% auto; /* 20px / 1080px =  <1%*/
+
 }
 
 .image-slider .image-dot {
 	float: left;
-	height: 30px;  /* 30px / 1080px =  2%*/
-	width: 30px;  /* 30px / 1080px =  2%*/
-	margin: 0 30px;  /* 30px / 1080px =  2%*/
+	height: 30px; 
+	width: 30px;  
+	margin: 0 10px; 
 	border-radius: 30px;
 	background-color: #DDDDDF;
 }
@@ -103,13 +104,13 @@ nav > ul > li > a:hover, nav > ul > li > a:focus {
 .main .sub-image {
 	float: left;
 	width: 49%;  /*  530px / 1080px  = 50%*/
-	margin: 0  0.1% 1%; /*  5px 20px / 1080px =  1%*/
+	margin: 0  0.4% 1%; /*  5px 20px / 1080px =  1%*/
 	background-color: #20B9EB;
-	padding: 1%; /* 20px / 1080px =  1%*/
+	padding: 1.4%; /* 20px / 1080px =  1%*/
 }
 
 .main .sub-image > img {
-	width: 94%;  /* 500px / 530px*/
+	width: 99%;  /* 500px / 530px*/
 }
 
 
@@ -118,16 +119,16 @@ nav > ul > li > a:hover, nav > ul > li > a:focus {
 /******************************************************************************/
 
 footer {
-	width: 100%; /* 1080px */
-	margin: 0 auto 20px;
+	width: 71%; /* 1080px */
+	margin: 0 auto 1%;  /* 20px / 1080px = 1% */
 }
 
 footer .social-icon {
 	display: block;
 	float: left;
-	margin-left: 5px;
-	width: 32px;
-	height: 32px;
+	margin-left: 0.5%;
+	width: 32px;  
+	height: 32px; 
 	background: url(../images/social-gray.png) no-repeat;
 	color: #AAA;
 	font-size: .9em;
@@ -136,7 +137,7 @@ footer .social-icon {
 }
 
 .social-icon.twitter {
-	background-position: -38px 0;
+	background-position: -38px 0;  
 }
 
 .social-icon.facebook {
@@ -157,4 +158,113 @@ footer .social-icon {
 
 footer .legal {
 	text-align: right;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< responsive >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+@media screen and (max-width:975px) {
+
+	header {
+		width: 99%;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+
+	.main .sub-image {
+		float: none;
+		width: 100%;  
+		margin: 0  0.4% 1%; 
+		background-color: #20B9EB;
+		padding: 1.4%; 
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 90%;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 100%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: left;
+		padding-left: 3%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 3%;
+	}
+
+}
+
+@media screen and (max-width:425px) {
+
+	
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+	
+	nav {
+		text-align: left;
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 50%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: none;
+		padding: 2% 2% 2% 29%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 29%;
+	}
+	nav > ul > li > a {
+		font-size: 1.7em; 
+	}
+	
+}
+
+
+@media screen and (max-width:320px) {
+
+	header {
+		width: 99%;
+	}
+
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+
+
 }
