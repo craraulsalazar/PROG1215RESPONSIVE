@@ -1,0 +1,299 @@
+.page-wrap {
+
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+@font-face {
+	font-family: 'AlexBrush';
+	src: url('../fonts/AlexBrush-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KaushanScript';
+	src: url('../fonts/KaushanScript-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+header {
+	width: 71%; /* width: 1080px*/
+	margin: 1% auto;  /* 20px / 1080px = 1% */
+	font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #20B9EB;
+}
+
+header h1 {
+	font-family: AlexBrush;
+	width:100%;
+	font-size: 3em;  /* 48px / 16px = 3em */
+}
+
+header h2 {
+	font-family: KaushanScript;
+	width:100%;
+	font-size: 2em; /* 32px/16px = 2em */
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< nav  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+nav {
+	font-family: AlexBrush;
+	width: 100%;
+	background-color: #34332E;
+	text-align: center;
+}
+
+nav > ul {
+	margin: 0 auto;
+	padding: 1% 0; /* 10px / 1080px = <1% */
+	/*width: 30%;  489.45 / 1080px = 33%*/
+	width: 489.45px;
+	
+	display: inline-block;
+
+}
+
+nav > ul > li {
+	float: left;
+	padding-left: 5%; /* 30px / 1080px = 2% */
+}
+
+nav > ul > li:first-child {
+	padding-left: 0;
+}
+
+nav > ul > li > a {
+	color: #DDDDDF;
+	font-size: 1.1em; /* 18px / 16px = 1.1em*/
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:focus {
+	color: #20B9EB;
+	text-decoration: none;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.main {
+	width: 71%;  /* width: 1080px*/
+	margin: 1% auto; /* 20px / 1080px = 1% */
+	text-align: center;
+}
+
+.main > video {
+	max-width: 100%;
+}
+
+.image-slider > img {
+	width:100%;
+}
+
+.image-slider .image-dots {
+	display: inline-block;
+	margin: 1% auto; /* 20px / 1080px =  <1%*/
+
+}
+
+.image-slider .image-dot {
+	float: left;
+	height: 30px; 
+	width: 30px;  
+	margin: 0 10px; 
+	border-radius: 30px;
+	background-color: #DDDDDF;
+}
+
+.image-slider .image-dot.image-current {
+	background-color: #20B9EB;
+}
+
+.main .sub-images {
+	margin: 1% 0;  /* 20px /1080px */
+}
+
+.main .sub-image {
+	float: left;
+	width: 49%;  /*  530px / 1080px  = 50%*/
+	margin: 0  0.4% 1%; /*  5px 20px / 1080px =  1%*/
+	background-color: #20B9EB;
+	padding: 1.4%; /* 20px / 1080px =  1%*/
+}
+
+.main .sub-image > img {
+	width: 99%;  /* 500px / 530px*/
+}
+
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+footer {
+	width: 71%; /* 1080px */
+	margin: 0 auto 1%;  /* 20px / 1080px = 1% */
+}
+
+footer .social-icon {
+	display: block;
+	float: left;
+	margin-left: 0.5%;
+	width: 32px;  
+	height: 32px; 
+	background: url(../images/social-gray.png) no-repeat;
+	color: #AAA;
+	font-size: .9em;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.social-icon.twitter {
+	background-position: -38px 0;  
+}
+
+.social-icon.facebook {
+	background-position: 0 0;
+}
+
+.social-icon.instagram {
+	background-position: -114px 0;
+}
+
+.social-icon.pintrest {
+	background-position: -38px -42px;
+}
+
+.social-icon.vine {
+	background-position: -152px -42px;
+}
+
+footer .legal {
+	text-align: right;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< responsive >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+@media screen and (max-width:975px) {
+
+	header {
+		width: 99%;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+
+	.main .sub-image {
+		float: none;
+		width: 100%;  
+		margin: 0  0.4% 1%; 
+		background-color: #20B9EB;
+		padding: 1.4%; 
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 90%;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+
+	header {
+		width: 95%;
+	}
+
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 100%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: left;
+		padding-left: 3%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 3%;
+	}
+
+}
+
+@media screen and (max-width:425px) {
+
+	header {
+		width: 99%;
+	}
+
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+	
+	nav {
+		text-align: left;
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 60%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: none;
+		padding: 2% 2% 2% 26%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 26%;
+	}
+	nav > ul > li > a {
+		font-size: 1.7em; 
+	}
+	
+}
+
+
+@media screen and (max-width:320px) {
+
+	header {
+		width: 99%;
+	}
+
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+
+
+}
