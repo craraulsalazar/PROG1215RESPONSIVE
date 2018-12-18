@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Guitar-fest</title>
+
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="./favicon.ico" />
+
+	<link rel="stylesheet" href="./css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./css/base.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+	<div class="page-wrap clear">
+
+		<header role="banner" aria-labelledby="title1">
+			<h1 id="title1">Guitar-fest</h1>
+			<h2>August 31 - September 2 at Guitar Park</h2>
+		</header>
+
+		<nav role="navigation">
+			<ul class="clear">
+				<li><a href="#">home</a></li>
+				<li><a href="#">tickets</a></li>
+				<li><a href="#">lineup</a></li>
+				<li><a href="#">faq</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<div class="main clear" role="main">
+			
+			<div class="container">
+
+					<form action="mailto:raul.salazar2008@gmail.com" method="post">
+
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.." 
+						required ="required"
+						aria-required="true"
+						title="Help us out we need to call you something"/>
+					
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.."
+						required ="required"
+						aria-required="true"
+						title="Help us out we need to call you something"
+						/>
+					
+						<label for="email">Email:</label>
+						<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="Please share your best email"
+						required="required"
+						aria-required="true" />
+
+
+						<label for="country">Country</label>
+						<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+						</select>
+					
+
+						<label for="subject">Please, rate this form</label>
+						<br><br>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						
+						<br><br>
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+						required="required"
+						aria-required="true"
+						></textarea>
+					
+						<input type="submit" value="Submit">
+					
+					</form>
+
+			</div>
+
+		</div>
+
+		<footer class="clear" role="contentinfo">
+			<div class="social">
+				<ul>
+					
+					<li>
+						<a href="#" class="fa-floatleft">
+							<span class="fa fa-twitter social"></span>
+							<span class="offscreen">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="fa-floatleft">
+							<span class="fa fa-linkedin social"></span>
+							<span class="offscreen">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="fa-floatleft">
+							<span class="fa fa-tumblr social"></span>
+							<span class="offscreen">Tumblr</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="fa-floatleft">
+							<span class="fa fa-facebook social"></span>
+							<span class="offscreen">Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="fa-floatleft">
+							<span class="fa fa-instagram social"></span>
+							<span class="offscreen">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:email@email.com" class="fa-floatleft">
+							<span class="fa fa-envelope social"></span>
+							<span class="offscreen">Email</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="legal">
+				<small>
+					© 2016 Guitar-fest |
+					<a href="#">Privacy</a> |
+					All Rights Reserved |
+					<a href="#" target="_blank">design by pixelator webdesigns</a>
+				</small>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="js/polyfiller.js"></script>
+	<script>
+		$.webshims.polyfill();
+	</script>
+</body>
+</html>

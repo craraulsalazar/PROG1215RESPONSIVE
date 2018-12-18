@@ -1,0 +1,455 @@
+body {
+	background:
+	radial-gradient(circle, transparent 20%, rgba(242, 242, 242, 0.9) 20%, rgba(242, 242, 242, 0.9) 80%, transparent 80%, transparent),
+	radial-gradient(circle, transparent 20%, rgba(242, 242, 242, 0.9) 20%, rgba(242, 242, 242, 0.9) 80%, transparent 80%, transparent) 50px 50px,
+	linear-gradient(rgba(168, 177, 187, 0.3) 8px, transparent 8px) 0 -4px,
+	linear-gradient(90deg, rgba(168, 177, 187, 0.3) 8px, transparent 8px) -4px 0;
+	background-color: rgba(242, 242, 242, 0.9);
+	background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+.page-wrap {
+
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+@font-face {
+	font-family: 'AlexBrush';
+	src: url('../fonts/AlexBrush-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KaushanScript';
+	src: url('../fonts/KaushanScript-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+header {
+	width: 71%; /* width: 1080px*/
+	margin: 1% auto;  /* 20px / 1080px = 1% */
+	font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #20B9EB;
+}
+
+header h1 {
+	font-family: AlexBrush;
+	width:100%;
+	font-size: 3em;  /* 48px / 16px = 3em */
+	text-shadow: 2px 4px 1px #CCC;
+
+	animation: CoolHeadingEffect 1.5s ease-in 2;
+}
+
+header h2 {
+	font-family: KaushanScript;
+	width:100%;
+	font-size: 2em; /* 32px/16px = 2em */
+	text-shadow: 3px 5px 1px #CCC;
+	animation: CoolHeadingEffect2 1.5s ease-in 2;
+}
+
+@keyframes CoolHeadingEffect {
+
+	0% {
+
+		text-shadow: 2px 4px 1px #CCC;
+
+	}
+
+	50% {
+
+		text-shadow: 0px 0px 15px #000;
+		transform: scale(1.1);
+	}
+
+	100% {
+
+		text-shadow: 2px 4px 1px #CCC;
+		
+	}
+
+}
+
+@keyframes CoolHeadingEffect2 {
+	
+	0% {
+
+		text-shadow: 3px 5px 1px #CCC;
+
+	}
+
+	50% {
+
+		text-shadow: 0px 0px 15px #000;
+		transform: scale(1.1);
+	}
+
+	100% {
+
+		text-shadow: 3px 5px 1px #CCC;
+		 
+	}
+
+}
+
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< nav  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+nav {
+	
+	width: 100%;
+	background-color: #34332E;
+	text-align: center;
+}
+
+nav > ul {
+	margin: 0 auto;
+	padding: 1% 0; /* 10px / 1080px = <1% */
+	/*width: 30%;  489.45 / 1080px = 33%*/
+	width: 489.45px;
+	
+	display: inline-block;
+
+}
+
+nav > ul > li {
+	float: left;
+	padding-left: 5%; /* 30px / 1080px = 2% */
+}
+
+nav > ul > li:first-child {
+	padding-left: 0;
+}
+
+nav > ul > li > a {
+	color: #DDDDDF;
+	font-size: 1.1em; /* 18px / 16px = 1.1em*/
+	border-bottom: 3px solid transparent;
+	transition: all 1s ease-out;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:focus {
+	color: #20B9EB;
+	text-decoration: none;
+	border-bottom: 3px solid #20B9EB;
+	transition: all 1s ease-in;
+}
+
+
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+.main {
+	width: 71%;  /* width: 1080px*/
+	margin: 1% auto; /* 20px / 1080px = 1% */
+	text-align: center;
+}
+
+.main > video {
+	max-width: 100%;
+}
+
+.image-slider > img {
+	width:100%;
+}
+
+.image-slider .image-dots {
+	display: inline-block;
+	margin: 1% auto; /* 20px / 1080px =  <1%*/
+
+}
+
+.image-slider .image-dot {
+	float: left;
+	height: 30px; 
+	width: 30px;  
+	margin: 0 10px; 
+	border-radius: 30px;
+	background-color: #DDDDDF;
+}
+
+.image-slider .image-dot.image-current {
+	background-color: #20B9EB;
+}
+
+.main .sub-images {
+	margin: 1% 0;  /* 20px /1080px */
+}
+
+.main .sub-image {
+	float: left;
+	width: 49%;  /*  530px / 1080px  = 50%*/
+	margin: 0  0.4% 1%; /*  5px 20px / 1080px =  1%*/
+	background-color: #20B9EB;
+	padding: 1.4%; /* 20px / 1080px =  1%*/
+
+	opacity: 0.5;
+	transition: opacity 0.5s ease-in, transform 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045); 
+	z-index: 1;
+
+}
+
+.main .sub-image:hover, .main .sub-image:focus {
+
+	opacity: 1;
+	transform: scale(1.1);
+	z-index: 2;
+}
+
+.main .sub-image > img {
+	width: 99%;  /* 500px / 530px*/
+}
+
+ /* Add a background color and some padding around the form */
+ .main .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+
+  .main input[type=text], .main select, .main textarea, .main input[type=email] {
+	width: 100%; /* Full width */
+	/*padding: 12px;  Some padding */ 
+	/* border: 1px solid #ccc;  Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	/*margin-top: 6px;  Add a top margin */
+	/*margin-bottom: 16px;  Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+
+	transition: all 0.30s ease-in-out;
+	outline: none;
+
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 12px 0px 12px 12px;
+	margin: 5px 1px 16px 0px;
+	border: 1px solid #DDDDDD;
+
+  }
+
+  .main input[type=text]:focus, .main textarea:focus, .main select:focus, .main input[type=email]:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	padding: 12px 0px 12px 12px;
+	margin: 5px 1px 16px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+  .main .container {
+	  	
+		text-align: left;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  .main input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  .main input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  .main .fa-star:hover {
+		color: orange;
+
+		transform: scale(1.5);
+		z-index: 2;
+
+  }
+
+  .main .fa-star {
+	color: black;
+	transition: transform 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	z-index: 1;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+footer {
+	width: 71%; /* 1080px */
+	margin: 0 auto 1%;  /* 20px / 1080px = 1% */
+}
+
+
+footer .fa-floatleft {
+	float: left;
+	margin-left: 0.5%
+}
+
+footer .social-icon {
+	display: block;
+	float: left;
+	margin-left: 0.5%;
+	width: 32px;  
+	height: 32px; 
+	background: url(../images/social-gray.png) no-repeat;
+	color: #AAA;
+	font-size: .9em;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.social-icon.twitter {
+	background-position: -38px 0;  
+}
+
+.social-icon.facebook {
+	background-position: 0 0;
+}
+
+.social-icon.instagram {
+	background-position: -114px 0;
+}
+
+.social-icon.pintrest {
+	background-position: -38px -42px;
+}
+
+.social-icon.vine {
+	background-position: -152px -42px;
+}
+
+footer .legal {
+	text-align: right;
+}
+
+/******************************************************************************/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< responsive >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/******************************************************************************/
+
+@media screen and (max-width:975px) {
+
+	header {
+		width: 99%;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+
+	.main .sub-image {
+		float: none;
+		width: 100%;  
+		margin: 0  0.4% 1%; 
+		background-color: #20B9EB;
+		padding: 1.4%; 
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 90%;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+
+	header {
+		width: 95%;
+	}
+
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 100%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: left;
+		padding-left: 3%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 3%;
+	}
+
+}
+
+@media screen and (max-width:425px) {
+
+	header {
+		width: 99%;
+	}
+
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+	
+	nav {
+		text-align: left;
+	}
+	
+	nav > ul {
+		margin: 0 auto;
+		padding: 1% 0; 
+		width: 60%;
+		display: inline-block;
+	}
+
+
+	nav > ul > li {
+		float: none;
+		padding: 2% 2% 2% 26%; 
+	}
+	
+	nav > ul > li:first-child {
+		padding-left: 26%;
+	}
+	nav > ul > li > a {
+		font-size: 1.7em; 
+	}
+	
+}
+
+
+@media screen and (max-width:320px) {
+
+	header {
+		width: 99%;
+	}
+
+	header h1 {
+		font-size: 2em;  
+	}
+	
+	header h2 {
+		width:100%;
+		font-size: 1.5em; 
+	}
+
+
+}
